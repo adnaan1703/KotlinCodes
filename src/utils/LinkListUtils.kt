@@ -19,7 +19,8 @@ fun createLinkList(arr: IntArray): ListNode? {
 fun ListNode?.printLinkList() {
     var head = this
     while (head != null) {
-        print("${head.`val`} ")
+        print("${head.`val`} -> ")
         head = head.next
     }
+    println("null")
 }
