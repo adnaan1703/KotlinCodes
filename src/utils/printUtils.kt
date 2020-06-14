@@ -23,3 +23,10 @@ fun String.print() {
 fun String.println() {
     println(this)
 }
+
+fun <T> List<T>.print() {
+    this.forEach {
+        print("$it ")
+    }
+    println()
+}
