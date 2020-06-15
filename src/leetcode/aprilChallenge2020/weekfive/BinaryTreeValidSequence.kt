@@ -1,5 +1,7 @@
 package leetcode.aprilChallenge2020.weekfive
 
+import utils.TreeNode
+
 
 fun main() {
 

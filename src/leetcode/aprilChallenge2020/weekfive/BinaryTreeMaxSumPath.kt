@@ -1,9 +1,9 @@
 package leetcode.aprilChallenge2020.weekfive
 
+import utils.TreeNode
 import utils.print
 import kotlin.math.max
 
-class TreeNode(val `val`: Int, val left: TreeNode? = null, val right: TreeNode? = null)
 
 private fun maxPathSum(root: TreeNode?): Int {
     val maxValue = intArrayOf(Int.MIN_VALUE)
@@ -18,11 +18,11 @@ private fun travelBinaryTree(root: TreeNode, maxValue: IntArray): Int {
     var leftSum = 0
     var rightSum = 0
     if (root.left != null) {
-        leftSum = travelBinaryTree(root.left, maxValue)
+        leftSum = travelBinaryTree(root.left!!, maxValue)
     }
 
     if (root.right != null) {
-        rightSum = travelBinaryTree(root.right, maxValue)
+        rightSum = travelBinaryTree(root.right!!, maxValue)
     }
 
     val currentMax = max(leftSum, rightSum)
