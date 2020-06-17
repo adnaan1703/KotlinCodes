@@ -30,3 +30,14 @@ fun <T> List<T>.print() {
     }
     println()
 }
+
+fun CharArray.printWithSpaces() {
+    this.forEach { print("$it ") }
+    println()
+}
+
+fun Array<CharArray>.print() {
+    this.forEach {
+        it.printWithSpaces()
+    }
+}
