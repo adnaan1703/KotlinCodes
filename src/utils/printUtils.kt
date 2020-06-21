@@ -41,3 +41,8 @@ fun Array<CharArray>.print() {
         it.printWithSpaces()
     }
 }
+
+fun LongArray.print() {
+    this.forEach { print("$it ") }
+    println()
+}
