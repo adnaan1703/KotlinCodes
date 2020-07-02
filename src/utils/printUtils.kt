@@ -25,10 +25,7 @@ fun String.println() {
 }
 
 fun <T> List<T>.print() {
-    this.forEach {
-        print("$it ")
-    }
-    println()
+    println(this)
 }
 
 fun CharArray.printWithSpaces() {
